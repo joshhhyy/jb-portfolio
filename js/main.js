@@ -7,6 +7,11 @@ $(document).ready(function() {
     $('.info').animate({scrollTop: 300})
   })
 
+  $('#about').on('click', function(e) {
+    e.preventDefault();
+    $('.info').animate({scrollTop: 0})
+  })
+
   $('#js').hover(function() {
     $('.skillLevel').html("Easily my most confident language. But I'm eager to learn more about this beat")
   }, function() {
@@ -49,8 +54,5 @@ $(document).ready(function() {
     $('.skillLevel').html(defaultMessage)
   })
 
-  $('#about').on('click', function(e) {
-    e.preventDefault();
-    $('.info').animate({scrollTop: 0})
-  })
+
 })

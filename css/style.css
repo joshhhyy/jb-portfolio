@@ -5,8 +5,7 @@ body {
   flex-direction: row;
   min-height: 100vh;
   margin: 0 auto;
-  overflow: hidden;
-
+  /*overflow: hidden;*/
 }
 
 li {
@@ -114,16 +113,34 @@ a:hover {
   height: 75px;
 }
 
-
 .skillsBox img {
   padding-left: 20px;
 }
 
-#ttt {
+.projects img {
+  float: left;
+  border: 2px solid white;
+  border-color: rgba(255, 255, 255, 0.2);
   width: 250px;
   height: 150px;
-  padding-left: 20px;
+  margin-left: 20px;
+  -webkit-transition: all 0.3s linear;
+   -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+     -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
 }
+
+.projects:hover img {
+  opacity: 0.5;
+}
+
+.projects p {
+  position: relative;
+  left: 5%;
+  width: 85%;
+}
+
 
 
 
