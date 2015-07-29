@@ -2,14 +2,19 @@ $(document).ready(function() {
 
   defaultMessage = 'Adding more and more by the second:'
 
-  $('#skills').on('click', function(e) {
-    e.preventDefault();
-    $('.info').animate({scrollTop: 300})
-  })
-
   $('#about').on('click', function(e) {
     e.preventDefault();
     $('.info').animate({scrollTop: 0})
+  })
+
+  $('#skills').on('click', function(e) {
+    e.preventDefault();
+    $('.info').animate({scrollTop: 414})
+  })
+
+  $('#projects').on('click', function(e) {
+    e.preventDefault();
+    $('.info').animate({scrollTop: 683})
   })
 
   $('#js').hover(function() {
