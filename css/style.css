@@ -5,7 +5,7 @@ body {
   flex-direction: row;
   min-height: 100vh;
   margin: 0 auto;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 li {
@@ -74,7 +74,7 @@ a:hover {
   padding-left: 20px;
 }
 
-.right p {
+.right p, .right a {
   font-family: 'News Cycle', sans-serif; 
   letter-spacing: 0.5px;
   padding: 20px;
@@ -98,6 +98,7 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.1);
   top: 5em;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .skillsBox {
@@ -131,15 +132,32 @@ a:hover {
         transition: all 0.3s linear;
 }
 
-.projects:hover img {
+.projects {
+  position: relative;
+  display: inline;
+}
+
+.projectImage:hover  {
   opacity: 0.5;
 }
 
-.projects p {
+.header {
   position: relative;
-  left: 5%;
-  width: 85%;
+  left: 70px;
+  font-size: 40px;
 }
+
+.gasheader {
+  position: relative;
+  left: 25px;
+  font-size: 40px;
+}
+
+.links a {
+  position: relative;
+  left: 60px;
+}
+
 
 
 
